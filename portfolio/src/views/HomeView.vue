@@ -1,18 +1,23 @@
 <template>
-	<div class="home">
-		<img alt="Vue logo" src="../assets/logo.png" />
-		<HelloWorld msg="Welcome to Your Vue.js App" />
+	<div class="wrapper">
+		<div>
+			<router-link to="/portfolio">Parstudio</router-link>
+		</div>
+		<div>
+			<router-link to="/contact">Contact</router-link>
+		</div>
 	</div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+<script setup></script>
 
-export default {
-	name: "HomeView",
-	components: {
-		HelloWorld,
-	},
-};
-</script>
+<style scoped>
+.wrapper {
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	place-items: center;
+	overflow-x: hidden;
+}
+</style>

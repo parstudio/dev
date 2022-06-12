@@ -1,0 +1,21 @@
+#app {
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	display: block;
+	padding: 20px;
+	color: #000;
+	border: 1px solid #000;
+	transition: all .2s;
+}
+
+a:hover {
+	color: #fff;
+	border: 1px soild #fff;
+	background-color: #000;
+}
+
+
