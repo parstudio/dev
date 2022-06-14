@@ -2,6 +2,7 @@
 	<!-- https://parstudiokr.wixsite.com/parstudio 포트폴리오사이트-->
 	<!-- https://saybyuk.com/  참고사이트-->
 	<!-- http://o-r-k-r.kr/ 참고사이트-->
+	<!-- 김혜련이 바보 -->
 	<router-view></router-view>
 </template>
 
