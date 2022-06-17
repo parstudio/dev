@@ -30,6 +30,11 @@ button, input, select, textarea{
 button, input {
   line-height: normal;
 }
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
 :focus {
   outline: 0;
 }
