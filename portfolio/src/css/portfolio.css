@@ -8,7 +8,7 @@
 #portfolio-wrapper img{
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .left-container {
@@ -21,12 +21,17 @@
 
 .left-container .category span{
   display: block;
-  padding: 20px 10px;
+  margin: 20px 10px;
   font-size: 1.3rem;
   transition: all .2s;
-}
-.left-container .category span:hover{
   cursor: pointer;
+
+}
+.left-container .category span.logo{
+  padding: 10px 5px;
+  border: 1px solid #000;
+}
+.left-container .category span:not(.logo):hover{
   transform: translateX(3px);
   text-decoration: underline;
 }
@@ -53,11 +58,9 @@
   display: grid;
   place-items: center;
   font-size: 3rem;
-  transition: all .2s;
-  display: none;
-}
-.left-container .thumnail .card:hover{
+  transition: all .4s;
   cursor: pointer;
+  display: none;
 }
 .left-container .thumnail .card:hover .hover-content{
   display: grid;
@@ -69,14 +72,21 @@
   padding: 20px;
   display: grid;
   place-items: center;
+  position: relative;
+}
+.right-container button {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+  font-size: 1.1rem;
 }
 .right-container .detail{
-  width: 95%;
-  height: 95%;
+  width: 100%;
+  height: 100%;
   overflow-y: scroll;
 }
 .right-container .detail .content{
-  width: 100%;
   height: 100%;
   display: flex;
 }

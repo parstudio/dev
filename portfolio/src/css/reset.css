@@ -95,7 +95,9 @@ textarea {
   resize: vertical;
 }
 a{
+  display: block;
   text-decoration: none;
+  color: inherit;
 }
 a:focus,
 a:active,
