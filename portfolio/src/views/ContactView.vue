@@ -1,5 +1,6 @@
 <template>
 	<div class="wrapper">
+		<!-- 김혜련 두번 잠들다 -->
 		<h1 class="title">Contact Us</h1>
 		<div class="outer">
 			<div class="left">
