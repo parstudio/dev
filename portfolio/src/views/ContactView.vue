@@ -16,7 +16,7 @@
 				</div>
 			</div>
 			<div class="right">
-				<input type="text">
+				<input type="text" />
 				<!--<router-link to="/">Parstudio</router-link>-->
 			</div>
 		</div>
