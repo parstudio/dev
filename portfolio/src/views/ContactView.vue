@@ -17,7 +17,9 @@
 				</div>
 			</div>
 			<div class="right">
-				<input type="text" />
+				<input type="text" placeholder="enter your name" />
+				<textarea cols="50" rows="10"></textarea>
+				<input type="submit" value="Submit" />
 				<!--<router-link to="/">Parstudio</router-link>-->
 			</div>
 		</div>
@@ -68,10 +70,8 @@
 	width: 50vw;
 	height: 100vh;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-}
-.right a {
-	width: 7em;
 }
 </style>
