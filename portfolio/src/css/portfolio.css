@@ -1,3 +1,6 @@
+/*
+  @name portfolio wrapper
+*/
 #portfolio-wrapper {
   width: 100vw;
   height: 100vh;
@@ -11,6 +14,9 @@
   object-fit: contain;
 }
 
+/*
+  @name left container
+*/
 .left-container {
   width: 100%;
   height: 100%;
@@ -18,14 +24,12 @@
   grid-template-columns: auto 1fr;
   grid-auto-flow: column;
 }
-
 .left-container .category span{
   display: block;
   margin: 20px 10px;
   font-size: 1.3rem;
   transition: all .2s;
   cursor: pointer;
-
 }
 .left-container .category span.logo{
   padding: 10px 5px;
@@ -66,28 +70,35 @@
   display: grid;
 }
 
+
+/*
+  @name right container
+*/
 .right-container {
   width: 100%;
-  height: 100vh;
-  padding: 20px;
   display: grid;
   place-items: center;
   position: relative;
 }
-.right-container button {
+.right-container .count{
   position: absolute;
-  top: 40px;
-  right: 40px;
-  cursor: pointer;
-  font-size: 1.1rem;
+  top: 4%;
+  right: 10%;
+  z-index: 2;
+}
+.right-container .count span{
+  font-size: 22px;
 }
 .right-container .detail{
-  width: 100%;
+  width: 75%;
   height: 100%;
   overflow-y: scroll;
+  scroll-behavior: smooth;
+  position: relative;
 }
 .right-container .detail .content{
-  height: 100%;
   display: flex;
+  height: 100%;
 }
+
 

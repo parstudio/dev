@@ -44,11 +44,11 @@
 			</div>
 		</div>
 		<div class="right-container">
-			<button>
-				<span>INFO</span>
-			</button>
-			<div class="detail" @mousewheel="contentWheelEvent" ref="content">
-				<div class="content">
+			<div class="count">
+				<span>{{ state.count + 1 }}</span>
+			</div>
+			<div class="detail" @mousewheel="contentWheelEvent" ref="detail">
+				<div class="content" ref="content">
 					<img src="@/assets/CLIO/210901K_CLIO-0024.jpg" alt="img1" />
 					<img src="@/assets/CLIO/210901K_CLIO-4155.jpg" alt="img1" />
 					<img src="@/assets/CLIO/210901K_CLIO-4177.jpg" alt="img1" />
@@ -61,14 +61,23 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, reactive } from "vue";
 
+const detail = ref();
 const content = ref();
-const SPEED = 1.5;
-
+let INDEX = 0;
+const state = reactive({
+	count: 0,
+});
 const contentWheelEvent = (event) => {
-	const y = parseInt(event.deltaY * SPEED);
-	content.value.scrollLeft += y;
+	const LENGTH = content.value.children.length;
+	//scroll up
+	if (event.deltaY < 0) INDEX <= 0 ? (INDEX = 0) : INDEX--;
+	//scroll down
+	if (event.deltaY > 0) INDEX >= LENGTH - 1 ? (INDEX = LENGTH - 1) : INDEX++;
+	state.count = INDEX;
+	const x = content.value.clientWidth * INDEX;
+	detail.value.scrollLeft = x;
 };
 </script>
 
