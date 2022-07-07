@@ -13,4 +13,5 @@
 <style>
 @import "@/css/reset.css";
 @import "@/css/main.css";
+@import "@/css/contact.css";
 </style>
