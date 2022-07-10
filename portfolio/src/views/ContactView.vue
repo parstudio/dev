@@ -7,15 +7,18 @@
 				<div class="leftBox">
 					<ul>
 						<li>
+							<font-awesome-icon icon="fa-solid fa-mobile-retro" />
 							<p>+82 10 4560 0488</p>
-							<!--머지테스또-->
 							<span class="underLine"></span>
 						</li>
 						<li>
+							<font-awesome-icon icon="fa-solid fa-envelope" />
 							<a href="parstudio.kr@gmail.com">parstudio.kr@gmail.com</a>
 							<span class="underLine"></span>
 						</li>
 						<li>
+							<font-awesome-icon icon="fa-brands fa-instagram-square" />
+							<!--<font-awesome-icon icon="fa-brands fa-instagram" />-->
 							<a href="https://www.instagram.com/parstudio.kr/">
 								@parstudio.kr
 							</a>
