@@ -3,9 +3,7 @@
 	<!-- https://saybyuk.com/  참고사이트-->
 	<!-- http://o-r-k-r.kr/ 참고사이트-->
 
-	<font-awesome-icon icon="fa-solid fa-user-secret" />
-	<font-awesome-icon icon="fa-brands fa-twitter" />
-	<font-awesome-icon icon="fa-regular fa-star" />
+	<!--<font-awesome-icon icon="fa-solid fa-user-secret" />-->
 
 	<router-view></router-view>
 </template>

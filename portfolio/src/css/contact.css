@@ -1,6 +1,6 @@
 .contact.wrapper {
   color: #555;
-  background-image: url(../assets/contact_back.jpg);
+  /*background-image: url(../assets/contact_back.jpg);*/
 	width: 100vw;
 	height: 100vh;
 	display: grid;
@@ -19,6 +19,9 @@
 	width: 50vw;
 	height: 100vh;
   position: relative;
+  display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .contact .left:hover .hoverBack ,
 .contact .right:hover .hoverBack {
@@ -31,11 +34,6 @@
   opacity: 0;
   position: absolute;
   z-index: 0;
-}
-.contact .left {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 .contact .leftBox {
 	width: 40%;
@@ -51,9 +49,30 @@
   background-color: #555;
   margin-top: 5px;
 }
-.contact .leftBox li:hover .underLine {
-  width: 100%;
+.contact .leftBox li .svg-inline--fa {
+  width: 25px;
+  display: flex;
+  justify-content: flex-start;
+  /* text-bg */
+
+}
+.contact .leftBox li {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  position: relative;
+}
+.contact .leftBox li::after {
+  content: '';
+  width: 0;
+  height: 1px;
+  background-color: rgba(0,0,0,.3);
+  position: absolute;
+  bottom: -5px;
   transition: all .3s;
+}
+.contact .leftBox li:hover::after {
+  width: 90%;
 }
 .contact .leftBox ul {
 	display: flex;
@@ -66,8 +85,7 @@
   width: 100%;
 }
 .contact .inputWrap {
-  width: 100%;
-  height: 100%;
+  width: 50%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -75,21 +93,43 @@
   gap: 7px;
   position: absolute;
   z-index: 1;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.contact .inputWrap input {
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  padding: 5px;
 }
 
 .contact .inputWrap > * { 
-  width: 60%;
+  width: 100%;
   display: block;
   box-sizing: border-box;
   border: none;
   padding: 5px;
 }
-
-.contact input[type=submit] {
-  padding: 7px;
-  color: #555;
+.contact .inputTop {
+  display: flex;
+  justify-content: space-between;
 }
-.contact input[type=submit]:hover {
-  box-shadow: 2px 2px 0 #555;
-  transition: all .2s;
+.contact .inputTop h3 {
+  font-size: 1.8rem;
 }
+.contact .inputTop button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ddd;
+  cursor: pointer;
+  transition: all .3s;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.3);
+}
+.contact .inputTop button .svg-inline--fa {
+  color: #fff;
+}
+.contact .inputTop button:hover {
+  transform: translateY(1px);
+  box-shadow: 0px 1.5px 1px rgba(0, 0, 0, 0.4);
+}
+ 
